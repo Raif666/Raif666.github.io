@@ -1,140 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Breeze Coffee</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #fff;
-      color: #333;
-    }
-    header {
-      background-color: #eacba3;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 40px;
-    }
-    header nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      background: #d6b98c;
-      padding: 8px 12px;
-      border-radius: 4px;
-    }
-    header h1 {
-      font-family: serif;
-      font-size: 24px;
-      display: flex;
-      align-items: center;
-    }
-    header h1:before, header h1:after {
-      content: "☕";
-      margin: 0 8px;
-    }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1528892952291-009c663ce843?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGNvZmZlZSUyMGRlc2t8ZW58MHx8fHwxNjUyMDc4NzM4&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center/cover;
-      height: 250px;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-    }
-    .hero h2 {
-      font-size: 36px;
-      margin: 0;
-    }
-    .hero p {
-      margin: 5px 0;
-      font-size: 16px;
-    }
-    .section {
-      padding: 40px;
-    }
-    .section h3 {
-      font-size: 24px;
-    }
-    .location {
-      text-align: center;
-      font-size: 20px;
-      margin-bottom: 20px;
-    }
-    .features {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-    }
-    .feature {
-      max-width: 300px;
-      text-align: center;
-    }
-    .feature img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-    .social {
-      text-align: center;
-      margin: 20px 0;
-    }
-    .social a {
-      margin: 0 10px;
-      font-size: 24px;
-      text-decoration: none;
-      color: #333;
-    }
-  </style>
+    <title>Main Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to right, rgba(255, 170, 50, 0.15), white);
+        }
+        .button {
+            border: none;
+            color: rgb(0, 0, 0);
+            background-color: rgb(205, 174, 143);
+            padding: 15px 32px;
+            font-size: 16px;
+            border-radius: 5px;
+            margin: 5px 20px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        nav {
+            background-color: rgb(255, 217, 179);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 10px 0;
+        }
+        .hero {
+            height: 348px;
+            background-image: url('cafmages/pexels-jayoke-851555.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: xx-large;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        p {
+            background-color: rgb(189, 166, 118);
+            padding: 10px;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 500px;
+            font-size: 20px;
+            border-radius: 5px;
+            border-color: black;
+        }
+        .imgshow {
+            display: flex;
+            height: auto;
+            width: 100%;
+            max-width: 600px;
+            object-fit: cover;
+        }   
+        .social-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: flex-start;
+            max-width: 600px;
+            margin: 20px 0 20px 20px;
+        }
+        .social-container p {
+            margin: 0;
+            font-size: 20px;
+        }
+        .herotext {
+            font-size: xx-large; 
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px 0 20px 20px;
+        }
+        .huge-text {
+            display: inline-block; 
+            font-size: xx-large;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold; 
+            background: linear-gradient(to right, rgba(175, 155, 126, 255), rgba(255, 255, 255, 0));
+            padding: 5px 15px;
+            border-radius: 1px;
+            margin: 20px 0 20px 20px;
+        }
+    </style>
 </head>
 <body>
 
-<header>
-  <nav>
-    <a href="#">Our Coffee</a>
-    <a href="#">Reviews</a>
-  </nav>
-  <h1>COFFEE</h1>
-  <nav>
-    <a href="#">Contact</a>
-    <a href="#">About Us</a>
-  </nav>
-</header>
+<nav>
+    <a href="reviews.html" class="button">Reviews</a>
+    <a href="main.html"    class="button">Our Coffee</a>
+    <img src="cafmages/logotransp.png" alt="Logo" style="width: 166px; height: 94px; margin: 0 20px;">
+    <a href="contact.html" class="button">Contact</a>
+    <a href="aboutus.html" class="button" >About Us</a>
+</nav>
 
 <div class="hero">
-  <h2>Breeze Coffee</h2>
-  <p>Est. 1995</p>
+    Breeze Coffee
 </div>
 
-<div class="section">
-  <div class="location">
-    <h3>The best of London</h3>
-    <p>Located on 43 Floral Street</p>
-  </div>
-  
-  <div class="social">
-    <a href="#"><span>📘</span></a>
-    <a href="#"><span>🐦</span></a>
-    <a href="#"><span>📸</span></a>
-    <p>@BreezeCoffee</p>
-  </div>
-  
-  <div class="features">
-    <div class="feature">
-      <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDV8fGNvZmZlZSUyMHNob3B8ZW58MHx8fHwxNjUyMDc4ODI2&ixlib=rb-1.2.1&q=80&w=1080" alt="Comfort and Simplicity">
-      <p>Comfort and Simplicity</p>
-    </div>
-    <div class="feature">
-      <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDE3fHxjb2ZmZWUlMjBiZWFuc3xlbnwwfHx8fDE2NTIwNzg5NTk&ixlib=rb-1.2.1&q=80&w=1080" alt="100% Pure and Delicious">
-      <p>100% Pure and Delicious</p>
-    </div>
-  </div>
+<div class="huge-text">The Best of London</div>
+<div class="herotext">Located on 43 Floral Street</div>
+
+
+<div class="social-container">
+<img src="cafmages/socialmedia.png" alt="Social Media" class="smedia" width="150px" height="auto">
+<p style="background-color: rgba(0, 0, 0, 0)">Find us on Social Media</p>
 </div>
+
+<p style="border:2px;border-color: black; margin-right: 200px">Comfort and Simplicity. <img class="imgshow" src="cafmages/cafe-bar-hotel-loft-style.jpg" alt="Coffee Shop Interior"> </p>
+<p style="border:2px;border-color: black; margin-left: 200px">100% Pure and Delicious <img class="imgshow" src="cafmages/coffee-171653_640.jpg" alt="Coffee Beans"> </p>
+
 
 </body>
 </html>
